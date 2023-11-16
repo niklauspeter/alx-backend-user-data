@@ -1,19 +1,19 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
-User class modeled to represent
-user table in DB
+User Module
 """
-# from sqlalchemy import create_engine
+
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
-# engine = create_engine("sqlite:///:memory:", echo=True)
 Base = declarative_base()
 
 
 class User(Base):
-    """User class
     """
+    User class
+    """
+
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True)
